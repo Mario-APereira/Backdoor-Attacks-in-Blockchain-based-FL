@@ -29,6 +29,11 @@ We evaluate four primary mechanisms:
 3. **Proof of Reputation (PoR)**: Selection based on historical performance and contributions.
 4. **Proof of Similarity (PoS)**: Selection based on directional closeness (cosine similarity) to the average update.
 
+### Pool aggregation function (Intra-pool Defenses)
+We evaluate two federated learning aggregation mechanisms for miners to aggregate their clients' weights:
+1. **FedAvg**: Standard weighted averaging of client updates, without robustness against malicious clients.
+2. **Krum**: Byzantine-robust aggregation that selects updates closest to the majority, reducing the impact of poisoned models.
+
 ## Attack Scenarios
 The repository implements two types of triggers and two attack strategies:
 * **Triggers**: 
